@@ -1,4 +1,4 @@
-Friendly fork of KiKaraage's Zen Context Menu, updated for Zen 1.22+ (Firefox 156). Menu item ids are verified against the Zen source with `tools/check-context-menu.sh`.
+Friendly fork of KiKaraage's Zen Context Menu. In sync with Zen 1.22.3b (Firefox 156). Menu item ids are verified against the Zen source with `tools/check-context-menu.sh`.
 
 Mod options:
 
