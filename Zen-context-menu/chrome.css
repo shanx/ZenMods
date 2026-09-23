@@ -456,10 +456,11 @@
     display: none !important;
   }
 }
-/* Hide "Share Tabs" */
+/* Hide "Share Tabs" (macOS shows this as a "Share" submenu, .share-tab-url-item) */
 @media -moz-pref("uc.hidecontext.sharetabs") {
   #context_shareSelectedTabs,
-  #context_shareSelectedTabsSeparator {
+  #context_shareSelectedTabsSeparator,
+  #tabContextMenu > .share-tab-url-item {
     display: none !important;
   }
 }
@@ -486,6 +487,15 @@
 /* Hide Zen's "Add domain to Space Routing" */
 @media -moz-pref("uc.hidecontext.spacerouting") {
   #context_zen-add-domain-to-routing {
+    display: none !important;
+  }
+}
+
+/* Hide extension items (e.g. 1Password) in the tab context menu.
+ * Extension items get ids like "<ext-id>-menuitem-<n>"; the separator before them has no id. */
+@media -moz-pref("uc.hidecontext.tabextensions") {
+  #tabContextMenu > [id*="-menuitem-"],
+  #tabContextMenu > menuseparator:has(+ [id*="-menuitem-"]) {
     display: none !important;
   }
 }

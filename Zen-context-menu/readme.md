@@ -51,11 +51,12 @@ Tab context menu:
 - Hide "Add Note" & "Edit Note"
 - Hide "Move Tab" options (includes Zen's move-to-space entries)
 - Hide "Select All Tabs"
-- Hide "Share Tabs"
+- Hide "Share Tabs" (macOS "Share" submenu)
 - Hide "Close Tab" & "Close Duplicate Tabs"
 - Hide "Close Multiple Tabs"
 - Hide "Reopen Closed Tab"
 - Hide Zen's "Add domain to Space Routing"
+- Hide extension items (e.g. 1Password) in tab context menu
 
 Toolbar context menu:
 
